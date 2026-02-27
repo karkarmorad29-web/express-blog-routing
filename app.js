@@ -4,7 +4,7 @@ const port = 3000;
 
 
 //Importiamo il router
-const postsRouter = require('./router/posts');
+const postsRouter = require('./routers/posts');
 
 //Definiamo la rotta home
 app.get('/', (req, res) => {
