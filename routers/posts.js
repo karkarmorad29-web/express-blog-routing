@@ -86,6 +86,12 @@ router.put('/:id', (req, res) => {
 
 });
 
+//Delete - Elimina un post
+router.delete('/:id', (req, res) => {
+  res.send(`Eliminazione del post ${req.params.id}`);
+});
+
+
 
 
 
