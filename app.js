@@ -1,6 +1,18 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const postsRouter = require('./routers/posts');
+
+app.use(express.json());
+
+app.use('/posts', postsRouter);
+
+app.listen(port, () => {
+    console.log(`Server attivo su http://localhost:${port} `);
+});
+
+//Importiamo il router
+const postsRouter = require('./routers/posts');
 
 
 //Importiamo il router
