@@ -8,8 +8,6 @@ app.use(express.json());
 app.use(express.static('public'));
 
 
-
-
 //Definiamo la rotta home
 app.get('/', (req, res) => {
     res.send("Benvenuto nel server del Blog");
